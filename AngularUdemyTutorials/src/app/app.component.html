@@ -343,6 +343,7 @@
           [id]="user.id"
           [avatar]="user.avatar"
           [name]="user.name"
+          [selected]="user.id === selectedUserId"
           (select)="onSelectedUser($event)"
         />
       </li>

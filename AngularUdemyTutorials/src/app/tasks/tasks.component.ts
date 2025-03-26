@@ -2,6 +2,7 @@ import { Component, Input, Output } from '@angular/core';
 import { DUMMY_TASKS } from './dummy-task';
 import { TaskComponent } from './task/task.component';
 import { NewtaskComponent } from "./newtask/newtask.component";
+import { NewTaskData } from './task/task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -31,6 +32,28 @@ export class TasksComponent {
 
   onShowTask(){
     this.showapp_newTask = true;
+  }
+
+  onCancelAddTask(){
+    this.showapp_newTask = false;
+  }
+
+  onAddTask(taskData: NewTaskData){
+    // this.tasks.push({
+    //   id: new Date().getTime().toString(),
+    //   title: taskData.title,
+    //   summary: taskData.summary,
+    //   dueDate: taskData.date,
+    //   userId: this.userId
+    // });
+    this.tasks.unshift({
+      id: new Date().getTime().toString(),
+      title: taskData.title,
+      summary: taskData.summary,
+      dueDate: taskData.date,
+      userId: this.userId
+    });
+    this.showapp_newTask = false;
   }
 
 }

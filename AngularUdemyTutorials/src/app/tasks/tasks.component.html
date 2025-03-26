@@ -1,8 +1,11 @@
+@if(showapp_newTask){
+    <app-newtask/>
+}
 <section id="tasks">
     <header>
         <h2>{{name}}'s Task</h2>
         <menu>
-            <button>Add Task</button>
+            <button (click)="onShowTask()">Add Task</button>
         </menu>
     </header>
 
@@ -14,4 +17,6 @@
         }
     </ul>
 </section>
+
+
 

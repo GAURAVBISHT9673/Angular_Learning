@@ -1,8 +1,9 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, inject, Inject, Input, Output } from '@angular/core';
 import { DUMMY_TASKS } from './dummy-task';
 import { TaskComponent } from './task/task.component';
 import { NewtaskComponent } from "./newtask/newtask.component";
 import { NewTaskData } from './task/task.model';
+import { TaskService } from './tasks.service';
 
 @Component({
   selector: 'app-tasks',
@@ -18,42 +19,45 @@ export class TasksComponent {
   @Input({required: true}) name !: string;
   // name : string = "Task Component";
   showapp_newTask : boolean = false;
-
+  // private taskService = new TaskService();
+  
   // name = DUMMY_USERS.find(user => user.id === this.id);
-  tasks = DUMMY_TASKS;
+  
+
+  //Property Injection
+  private taskService = inject(TaskService);
+  //OR
+  //constructor Injection
+  // constructor(private taskService :TaskService){
+
+  // }
   
   get selectedUsertasks(){
-    return this.tasks.filter((task) => task.userId === this.userId);
+    return this.taskService.getUserTasks(this.userId);
   }
 
-  onCompleteTask(id: string){
-    this.tasks = this.tasks.filter((task)=> task.id !== id); 
-  }
+  // onCompleteTask(id: string){
+  //   this.taskService.removeTask(this.userId);
+  // }
 
   onShowTask(){
     this.showapp_newTask = true;
   }
 
-  onCancelAddTask(){
+  onCloseAddTask(){
     this.showapp_newTask = false;
   }
 
-  onAddTask(taskData: NewTaskData){
-    // this.tasks.push({
-    //   id: new Date().getTime().toString(),
-    //   title: taskData.title,
-    //   summary: taskData.summary,
-    //   dueDate: taskData.date,
-    //   userId: this.userId
-    // });
-    this.tasks.unshift({
-      id: new Date().getTime().toString(),
-      title: taskData.title,
-      summary: taskData.summary,
-      dueDate: taskData.date,
-      userId: this.userId
-    });
-    this.showapp_newTask = false;
-  }
+  // onAddTask(taskData: NewTaskData){
+  //   // this.tasks.push({
+  //   //   id: new Date().getTime().toString(),
+  //   //   title: taskData.title,
+  //   //   summary: taskData.summary,
+  //   //   dueDate: taskData.date,
+  //   //   userId: this.userId
+  //   // });
+    
+  //   this.showapp_newTask = false;
+  // }
 
 }

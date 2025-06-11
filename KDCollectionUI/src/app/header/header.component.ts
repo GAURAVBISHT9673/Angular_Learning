@@ -9,4 +9,28 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  links=[
+    {
+      link:'Home',
+      redirect:''
+    },
+    {
+      link:'Shop',
+      redirect:''
+    },
+    {
+      link:'My Account',
+      redirect:''
+    },
+    {
+      link:'Compare',
+      redirect:''
+    },
+    {
+      link:'Login',
+      redirect:''
+    }   
+  
+  ]
+
 }

@@ -14,7 +14,34 @@
         </div>
     </div>
 
-</header> 
+    <nav class="nav container">
+        <a href="" class="nav-logo">
+            <img src="img/logo_img.jpg" alt="" class="nav-logo-img">
+        </a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                @for (item of links; track $index) {
+                    <li class="nav-item">
+                        <a href="" class="nav-link">{{ item.link }}</a>
+                    </li>
+                }
+            </ul>
+
+            <div class="header-search">
+                <input type="text" placeholder="Search for items..." class="form-input">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="header-user-actions">
+                <a href="" class="header-action-btn">
+                    <i class="fa fa-heart"></i>
+                    <span>33</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</header>
 
 
 

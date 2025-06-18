@@ -21,5 +21,19 @@
     <!-- ========================== CATEGORIES ======================= -->
     <section class="categories container section">
         <h3 class="section-title"><span>Popular</span> Categories</h3>
+
+        <swiper-container navigation="true" loop="true" slides-per-view="5" space-between="24" speed="1500">
+            @for (category of categories; track $index) {
+            <swiper-slide>
+                <div class="category-item">
+                    <a [href]="category.route">
+                        <img [src]="'img/' + category.img" alt="" class="category-img">
+                        <h3 class="category-title"> {{ category.title }} </h3>
+                    </a>
+                </div>
+            </swiper-slide>
+            }
+        </swiper-container>
+
     </section>
 </main>

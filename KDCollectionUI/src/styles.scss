@@ -127,8 +127,21 @@ input {
   gap: 1.5rem;
 }
 
+.section{
+  padding-block: 2rem;
+}
+
 .section-lg {
   padding-block: 4rem;
+}
+
+.section-title{
+  font-size: var(--h4-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.section-title span{
+  color: var(--first-color);
 }
 
 .form-input {

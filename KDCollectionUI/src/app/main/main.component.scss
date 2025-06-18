@@ -56,3 +56,35 @@
     background-color: transparent;
     color: var(--first-color);
 }
+
+/* ===================== Category ====================== */
+.category-item{
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 0.625rem 0.625rem 1.25rem;
+    border-radius: 1.25rem;
+}
+
+.category-img{
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.category-title{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+/* ===================== Swipe Class =============== */
+.swiper{
+    overflow: initial !important;
+}
+swiper-container::part(button-prev) {
+  top: -1.875rem;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    top: -1.875rem;
+}

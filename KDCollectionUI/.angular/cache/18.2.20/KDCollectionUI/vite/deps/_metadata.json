@@ -1,55 +1,64 @@
 {
-  "hash": "2d6308e8",
-  "configHash": "54cba09f",
+  "hash": "6b80a56b",
+  "configHash": "2977fdf6",
   "lockfileHash": "67b66436",
-  "browserHash": "50289a60",
+  "browserHash": "15bfbafc",
   "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "c1e617a8",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "db5e32bd",
+      "fileHash": "1d7396c5",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "07653f26",
+      "fileHash": "f8f752ac",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "49b5b27f",
+      "fileHash": "a32f394c",
       "needsInterop": false
     },
     "@fortawesome/angular-fontawesome": {
       "src": "../../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
       "file": "@fortawesome_angular-fontawesome.js",
-      "fileHash": "53d82b08",
+      "fileHash": "a9416275",
       "needsInterop": false
     },
     "@fortawesome/free-regular-svg-icons": {
       "src": "../../../../../../node_modules/@fortawesome/free-regular-svg-icons/index.es.js",
       "file": "@fortawesome_free-regular-svg-icons.js",
-      "fileHash": "b79c1436",
+      "fileHash": "bb5f1432",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.es.js",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "94fee86a",
+      "fileHash": "059c1695",
       "needsInterop": false
     },
     "swiper/element/bundle": {
       "src": "../../../../../../node_modules/swiper/swiper-element-bundle.mjs",
       "file": "swiper_element_bundle.js",
-      "fileHash": "2454d9aa",
+      "fileHash": "cca47f0b",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-C74MPBZ5": {
-      "file": "chunk-C74MPBZ5.js"
+    "chunk-PDRKVAOH": {
+      "file": "chunk-PDRKVAOH.js"
+    },
+    "chunk-IMENVMIE": {
+      "file": "chunk-IMENVMIE.js"
     },
     "chunk-PHFBGYCZ": {
       "file": "chunk-PHFBGYCZ.js"

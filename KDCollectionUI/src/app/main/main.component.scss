@@ -58,6 +58,11 @@
 }
 
 /* ===================== Category ====================== */
+
+.categories{
+    overflow: hidden;
+}
+
 .category-item{
     text-align: center;
     border: 1px solid var(--border-color);
@@ -76,15 +81,21 @@
 }
 
 /* ===================== Swipe Class =============== */
-.swiper{
-    overflow: initial !important;
+// .swiper{
+//     overflow: initial !important;
+// }
+
+swiper-container::part(container) {
+  overflow: initial;
 }
-swiper-container::part(button-prev) {
+
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
   top: -1.875rem;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-next,
-.swiper-button-prev{
-    top: -1.875rem;
-}
+// .swiper-button-next,
+// .swiper-button-prev{
+//     top: -1.875rem;
+// }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +7,8 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
   standalone: true,
   imports: [FontAwesomeModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HeaderComponent {
 

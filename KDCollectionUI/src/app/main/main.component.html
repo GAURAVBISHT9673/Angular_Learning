@@ -1,5 +1,21 @@
 <!-- <p>main works!</p> -->
 
+
+<!-- <script>
+    const swiperEl = document.querySelector('swiper-container');
+    const btnPrev = document.getElementById('btnPrev');
+
+    btnPrev.addEventListener('click', () => {
+        swiperEl.swiper.slideNext();
+    });
+
+    const btnNext = document.getElementById('btnNext');
+
+    btnNext.addEventListener('click', () => {
+        swiperEl.swiper.slideNext();
+    });
+</script> -->
+
 <main class="main">
     <!-- ======================== HOME ========================== -->
     <section class="home section-lg">
@@ -22,9 +38,10 @@
     <section class="categories container section">
         <h3 class="section-title"><span>Popular</span> Categories</h3>
 
-        <swiper-container navigation="true" loop="true" slides-per-view="5" space-between="24" speed="1500">
-            @for (category of categories; track $index) {
-            <swiper-slide>
+        
+        <swiper-container [navigation]="true" [loop]="true" slides-per-view="6" [space-between]="24" [speed]="1000" >
+            
+            <swiper-slide *ngFor="let category of categories; let i = index" >
                 <div class="category-item">
                     <a [href]="category.route">
                         <img [src]="'img/' + category.img" alt="" class="category-img">
@@ -32,8 +49,14 @@
                     </a>
                 </div>
             </swiper-slide>
-            }
+            
         </swiper-container>
+<!-- 
+        <button class="custom-prev-button" (click)="goPrev()" >Previous</button>
+        <button class="custom-next-button"  (click)="goNext()">Next</button> -->
+
+
+        
 
     </section>
 </main>

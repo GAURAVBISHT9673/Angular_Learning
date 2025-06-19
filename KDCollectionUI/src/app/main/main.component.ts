@@ -1,56 +1,82 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {Component,ViewChild,ElementRef,CUSTOM_ELEMENTS_SCHEMA,AfterViewInit} from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+// import { SwiperContainer } from 'swiper/element';
+// import { Swiper } from 'swiper/types';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [],
+  imports: [FontAwesomeModule,CommonModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class MainComponent {
+// export class MainComponent implements AfterViewInit {
+export class MainComponent{
+  faAngleRight = faAngleRight;
+  faAngleLeft = faAngleLeft;
 
-  categories=[
+  // @ViewChild('swiperRef', { static: true }) swiperRef!: ElementRef<SwiperContainer>;
+
+  // swiperInstance!: Swiper; // Declare a variable to hold the Swiper instance
+
+  // ngAfterViewInit() {
+  //   // Initialize Swiper after the view has been initialized
+  //   this.swiperInstance = this.swiperRef.nativeElement.swiper;
+  // }
+
+  // // Optional: Methods to control navigation programmatically
+  // goNext() {
+  //   this.swiperInstance.slideNext();
+  // }
+
+  // goPrev() {
+  //   console.log('go Prev is Click');
+  //   this.swiperInstance.slidePrev();
+  // }
+
+  categories = [
     {
-      route:' ',
+      route: ' ',
       img: 'category-1.jpg',
-      title:'T-Shirt'
+      title: 'T-Shirt',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-2.jpg',
-      title:'Bags'
+      title: 'Bags',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-3.jpg',
-      title:'Sandal'
+      title: 'Sandal',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-4.jpg',
-      title:'Scarf Cap'
+      title: 'Scarf Cap',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-5.jpg',
-      title:'Shoes'
+      title: 'Shoes',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-6.jpg',
-      title:'Pillowcase'
+      title: 'Pillowcase',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-7.jpg',
-      title:'Jumpsuit'
+      title: 'Jumpsuit',
     },
     {
-      route:' ',
+      route: ' ',
       img: 'category-8.jpg',
-      title:'Hats'
+      title: 'Hats',
     },
-]
-  
+  ];
 }

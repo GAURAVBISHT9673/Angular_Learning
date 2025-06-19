@@ -1,8 +1,10 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  DOCUMENT,
   DomSanitizer
-} from "./chunk-MLCQPDMK.js";
+} from "./chunk-O2K6NUWL.js";
+import {
+  DOCUMENT
+} from "./chunk-D3JV2RY4.js";
 import {
   Component,
   Directive,

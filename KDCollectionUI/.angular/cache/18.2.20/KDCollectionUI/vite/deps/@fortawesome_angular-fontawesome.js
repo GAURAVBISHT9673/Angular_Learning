@@ -1,7 +1,9 @@
 import {
-  DOCUMENT,
   DomSanitizer
-} from "./chunk-C74MPBZ5.js";
+} from "./chunk-PDRKVAOH.js";
+import {
+  DOCUMENT
+} from "./chunk-IMENVMIE.js";
 import {
   Component,
   Directive,

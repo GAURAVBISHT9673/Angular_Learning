@@ -1,41 +1,102 @@
-import { CommonModule } from '@angular/common';
-import {Component,ViewChild,ElementRef,CUSTOM_ELEMENTS_SCHEMA,AfterViewInit} from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  CUSTOM_ELEMENTS_SCHEMA,
+  AfterViewInit,
+  NO_ERRORS_SCHEMA,
+  OnInit,
+  afterNextRender,
+  afterRender,
+} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { register, SwiperContainer } from 'swiper/element/bundle';
+import { Swiper } from 'swiper/types';
 // import { SwiperContainer } from 'swiper/element';
 // import { Swiper } from 'swiper/types';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [FontAwesomeModule,CommonModule],
+  imports: [FontAwesomeModule, CommonModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 // export class MainComponent implements AfterViewInit {
-export class MainComponent{
+export class MainComponent  {
   faAngleRight = faAngleRight;
   faAngleLeft = faAngleLeft;
 
-  // @ViewChild('swiperRef', { static: true }) swiperRef!: ElementRef<SwiperContainer>;
+  // @ViewChild('swiperRef') swiperRef!: any;
+    @ViewChild('swiperRef', { static: true }) swiperRef!: ElementRef<SwiperContainer>;
 
-  // swiperInstance!: Swiper; // Declare a variable to hold the Swiper instance
+  swiperInstance!: Swiper; // Declare a variable to hold the Swiper instance
 
-  // ngAfterViewInit() {
-  //   // Initialize Swiper after the view has been initialized
-  //   this.swiperInstance = this.swiperRef.nativeElement.swiper;
-  // }
+  ngAfterViewInit() {
+    // Initialize Swiper after the view has been initialized
+    this.swiperInstance = this.swiperRef.nativeElement.swiper;
+  }
 
-  // // Optional: Methods to control navigation programmatically
-  // goNext() {
-  //   this.swiperInstance.slideNext();
-  // }
+  // Optional: Methods to control navigation programmatically
+  goNext() {
+    this.swiperInstance.slideNext();
+  }
 
-  // goPrev() {
-  //   console.log('go Prev is Click');
-  //   this.swiperInstance.slidePrev();
-  // }
+  goPrev() {
+    this.swiperInstance.slidePrev();
+  }
+
+  swiperConfig = {
+    slidesPerView: 6, // Default slides per view
+    spaceBetween: 20, // Default space between slides
+    breakpoints: {
+      // When window width is >= 640px
+      240:{
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      // When window width is >= 1024px
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      }
+    },
+    // on: {
+    //   init() {},
+    // },
+  };
+
+  ngOnChanges(){
+    afterRender(() => {
+      const swiperE1 = document.querySelector('swiper-container');
+
+      if (swiperE1) {
+        Object.assign(swiperE1, this.swiperConfig);
+      }
+    });
+  }
+
+  constructor() {
+    // afterRender(() => {
+    //   const swiperE1 = document.querySelector('swiper-container');
+
+    //   if (swiperE1) {
+    //     Object.assign(swiperE1, this.swiperConfig);
+    //   }
+    // });
+    this.ngOnChanges();
+  }
 
   categories = [
     {

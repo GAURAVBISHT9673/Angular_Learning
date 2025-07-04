@@ -39,7 +39,7 @@
         <h3 class="section-title"><span>Popular</span> Categories</h3>
 
         
-        <swiper-container [navigation]="true" [loop]="true" slides-per-view="6" [space-between]="24" [speed]="1000" >
+        <swiper-container navigation="true" [loop]="true" [speed]="1000" #swiperRef >
             
             <swiper-slide *ngFor="let category of categories; let i = index" >
                 <div class="category-item">
@@ -51,9 +51,9 @@
             </swiper-slide>
             
         </swiper-container>
-<!-- 
+
         <button class="custom-prev-button" (click)="goPrev()" >Previous</button>
-        <button class="custom-next-button"  (click)="goNext()">Next</button> -->
+        <button class="custom-next-button"  (click)="goNext()">Next</button>
 
 
         

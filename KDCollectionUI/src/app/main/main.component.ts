@@ -26,18 +26,26 @@ import { Swiper } from 'swiper/types';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 // export class MainComponent implements AfterViewInit {
-export class MainComponent  {
+export class MainComponent {
   faAngleRight = faAngleRight;
   faAngleLeft = faAngleLeft;
 
-  // @ViewChild('swiperRef') swiperRef!: any;
-    @ViewChild('swiperRef', { static: true }) swiperRef!: ElementRef<SwiperContainer>;
+  @ViewChild('swiperRef', { static: true })
+  swiperRef!: ElementRef<SwiperContainer>;
 
   swiperInstance!: Swiper; // Declare a variable to hold the Swiper instance
 
   ngAfterViewInit() {
     // Initialize Swiper after the view has been initialized
     this.swiperInstance = this.swiperRef.nativeElement.swiper;
+
+    if (this.swiperRef.nativeElement) {
+      Object.assign(
+        this.swiperRef.nativeElement,this.swiperConfig
+        // setInterval(() => this.swiperConfig, 1000)
+      );
+      // this.swiperRef.nativeElement, this.swiperConfig,setTimeout()=>{});
+    }
   }
 
   // Optional: Methods to control navigation programmatically
@@ -54,7 +62,7 @@ export class MainComponent  {
     spaceBetween: 20, // Default space between slides
     breakpoints: {
       // When window width is >= 640px
-      240:{
+      240: {
         slidesPerView: 1,
         spaceBetween: 40,
       },
@@ -70,19 +78,19 @@ export class MainComponent  {
       1024: {
         slidesPerView: 6,
         spaceBetween: 20,
-      }
+      },
     },
-    // on: {
-    //   init() {},
-    // },
+    on: {
+      init() {},
+    },
   };
 
-  ngOnChanges(){
+  ngOnChanges() {
     afterRender(() => {
-      const swiperE1 = document.querySelector('swiper-container');
+      // const swiperE1 = document.querySelector('swiper-container');
 
-      if (swiperE1) {
-        Object.assign(swiperE1, this.swiperConfig);
+      if (this.swiperRef.nativeElement) {
+        Object.assign(this.swiperRef.nativeElement, this.swiperConfig);
       }
     });
   }
@@ -90,12 +98,11 @@ export class MainComponent  {
   constructor() {
     // afterRender(() => {
     //   const swiperE1 = document.querySelector('swiper-container');
-
     //   if (swiperE1) {
     //     Object.assign(swiperE1, this.swiperConfig);
     //   }
     // });
-    this.ngOnChanges();
+    // this.ngOnChanges();
   }
 
   categories = [

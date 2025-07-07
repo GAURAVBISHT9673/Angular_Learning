@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&family=Zain:wght@800;900&display=swap");
 /*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 4rem;
 
@@ -19,9 +20,9 @@
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
-  --body-font: 'Lato', sans-serif;
-  --second-font: 'Spartan', sans-serif;
-  --log-font: 'Zain', sans-serif;
+  --body-font: "Lato", sans-serif;
+  --second-font: "Spartan", sans-serif;
+  --log-font: "Zain", sans-serif;
   --big-font-size: 3.5rem;
   --h1-font-size: 2.75rem;
   --h2-font-size: 2rem;
@@ -43,6 +44,9 @@
 
   /*========== Transition ==========*/
   --transition: cubic-bezier(0, 0, 0.05, 1);
+  /*========== Swiper ==========*/
+  --swiper-navigation-size: 44px;
+  --swiper-theme-color: #007aff;
 }
 
 /* Responsive typography */
@@ -127,7 +131,7 @@ input {
   gap: 1.5rem;
 }
 
-.section{
+.section {
   padding-block: 2rem;
 }
 
@@ -135,12 +139,12 @@ input {
   padding-block: 4rem;
 }
 
-.section-title{
+.section-title {
   font-size: var(--h4-font-size);
   margin-bottom: 1.5rem;
 }
 
-.section-title span{
+.section-title span {
   color: var(--first-color);
 }
 

@@ -37,10 +37,15 @@
     <!-- ========================== CATEGORIES ======================= -->
     <section class="categories container section">
         <h3 class="section-title"><span>Popular</span> Categories</h3>
-
-
-        <swiper-container navigation="true" [loop]="true" [speed]="1000" #swiperRef>
-
+        <div class="categories-container">
+            <div class="swiper-button-prev" (click)="goPrev()">
+                <fa-icon class="faicon" [icon]="faAngleLeft" />
+            </div>
+            <div class="swiper-button-next" (click)="goNext()">
+                <fa-icon class="faicon" [icon]="faAngleRight" />
+            </div>
+        </div>
+        <swiper-container [loop]="true" [speed]="1000" #swiperRef>
             <swiper-slide *ngFor="let category of categories; let i = index">
                 <div class="category-item">
                     <a [href]="category.route">
@@ -49,25 +54,7 @@
                     </a>
                 </div>
             </swiper-slide>
-
         </swiper-container>
-
-        <div class="swiper-button-prev">
-            <button class="custom-next-button" (click)="goPrev()">
-                <fa-icon class="faicon" [icon]="faAngleLeft"/>
-            </button>
-        </div>
-        <div class="swiper-button-next">
-            <button class="custom-next-button" (click)="goNext()">
-                <fa-icon class="faicon" [icon]="faAngleRight"/>
-            </button>
-        </div>
-
-
-
-
-
-
-
+        
     </section>
 </main>

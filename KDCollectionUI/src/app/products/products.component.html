@@ -1,0 +1,31 @@
+<!-- <p>products works!</p> -->
+
+<section class="products section container">
+    <div class="tab-btns">
+        <span class="tab-btn">Featured</span>
+        <span class="tab-btn">Popular</span>
+        <span class="tab-btn">New added</span>
+    </div>
+
+    <div class="tab-items">
+        <div class="tab-item active">
+            <div class="products-container grid">
+                <div class="product-item">
+                    <div class="product-banner">
+                        @for (product of products; track $index) {
+                            <a href="" class="product-images">
+                                <img [src]="'img/'+product.img" alt="" class="product-img">
+                            </a>
+                        }
+
+
+                        <div class="product-banner-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more tab items for Popular and New added -->
+    </div>
+</section>

@@ -1,0 +1,20 @@
+.tab-btns{
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+.tab-btn{
+    background-color: var(--container-color);
+    color: var(--title-color);
+    padding: 1rem 1.25rem .875rem;
+    border-radius: .25rem;
+    font-family: var(--second-font);
+    font-size: var(--second-font-size);
+    font-weight: var(--weight-600);
+    cursor: pointer;
+}
+
+.tab-btn{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}

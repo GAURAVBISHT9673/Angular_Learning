@@ -2,30 +2,611 @@
 
 <section class="products section container">
     <div class="tab-btns">
-        <span class="tab-btn">Featured</span>
+        <span class="tab-btn active-tab">Featured</span>
         <span class="tab-btn">Popular</span>
         <span class="tab-btn">New added</span>
     </div>
 
     <div class="tab-items">
-        <div class="tab-item active">
+        <div class="tab-item active-tab">
             <div class="products-container grid">
                 <div class="product-item">
                     <div class="product-banner">
-                        @for (product of products; track $index) {
-                            <a href="" class="product-images">
-                                <img [src]="'img/'+product.img" alt="" class="product-img">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-1-2.jpg'" alt="" class="product-img hover">
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
                             </a>
-                        }
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
 
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
 
-                        <div class="product-banner-content">
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
 
                         </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-2-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-2-2.jpg'" alt="" class="product-img hover">
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-3-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-3-2.jpg'" alt="" class="product-img hover">
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-4-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-4-2.jpg'" alt="" class="product-img hover">
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- Add more tab items for Popular and New added -->
+         <div class="tab-item">
+            <div class="products-container grid">
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-item">
+            <div class="products-container grid">
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-banner">
+                        <!-- @for (product of products; track ₹index) { -->
+                        <a href="" class="product-images">
+                            <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
+                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                        </a>
+                        <!-- } -->
+
+                        <div class="product-actions">
+                            <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a>
+                            <a href="" class="action-btn" aria-label="Add to Wishlist">
+                                <fa-icon class="faicon" [icon]="faHeart" />
+                            </a>
+                            <!-- <a href="" class="action-btn" aria-label="Quick View">
+                                <fa-icon class="faicon" [icon]="faEye" />
+                            </a> -->
+                        </div>
+
+                        <div class="product-badge light-pink">Hot</div>
+                    </div>
+
+                    <div class="product-content">
+                        <span class="product-category">Clothing</span>
+                        <a href="">
+                            <h3 class="product-title">Colorful Pattern Shirts</h3>
+                        </a>
+
+                        <!-- Rating Section -->
+                        <div class="product-rating">
+
+                        </div>
+
+                        <div class="product-price flex">
+                            <span class="new-price">₹238.85</span>
+                            <span class="old-price">₹238.85</span>
+                        </div>
+
+
+                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                            <fa-icon class="faicon" [icon]="faShoppingBag" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>

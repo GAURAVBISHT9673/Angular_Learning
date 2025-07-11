@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faEye,faHeart, } from '@fortawesome/free-regular-svg-icons';
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
 
+  faEye = faEye;
+  faHeart = faHeart;
+  faShoppingBag = faShoppingBag
+  // faCartPlus = 'fa fa-cart-plus';
 
   products = [
     {

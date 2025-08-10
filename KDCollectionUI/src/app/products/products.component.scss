@@ -133,7 +133,7 @@
   margin-bottom: 0.75rem;
 }
 .product-ratings{
-  font-size: 2rem;
+  font-size: var(--smaller-font-size);
   color: hsl(42, 100%, 50%);
   cursor: pointer;
   margin-bottom: 0.75rem;
@@ -158,11 +158,13 @@
   color: var(--text-color-light);
   text-decoration: line-through;
 }
+
 .action-btn:hover{
   background-color: var(--first-color);
   border-color: var(--first-color);
   color: var(--body-color);
 }
+
 .tab-item:not(.active-tab){
   display: none;
 }

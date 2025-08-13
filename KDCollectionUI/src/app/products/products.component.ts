@@ -59,5 +59,26 @@ export class ProductsComponent {
       title: 'Hats',
     },
   ];
+
+  dataTarget(target: string) {
+    const tabItems = document.querySelectorAll('.tab-item');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+
+    tabItems.forEach(item => {
+      item.classList.remove('active-tab');
+      if (item.id === target) {
+        item.classList.add('active-tab');
+      }
+    });
+
+    tabBtns.forEach(btn => {
+      btn.classList.remove('active-tab');
+      const newLocal = `#${target}`;
+      if (btn.getAttribute('data-target') === newLocal) {
+        btn.classList.add('active-tab');
+      }
+    });
+
+  }
   
 }

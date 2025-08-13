@@ -2,13 +2,13 @@
 
 <section class="products section container">
     <div class="tab-btns">
-        <span class="tab-btn active-tab">Featured</span>
-        <span class="tab-btn">Popular</span>
-        <span class="tab-btn">New added</span>
+        <span class="tab-btn active-tab" data-target="#featured" (click)='dataTarget("featured")'  >Featured</span>
+        <span class="tab-btn" data-target="#popular" (click)='dataTarget("popular")'>Popular</span>
+        <span class="tab-btn" data-target="#new-added" (click)='dataTarget("new-added")' >New added</span>
     </div>
 
     <div class="tab-items">
-        <div class="tab-item active-tab">
+        <div class="tab-item active-tab" content id="featured">
             <div class="products-container grid">
                 <div class="product-item">
                     <div class="product-banner">
@@ -208,15 +208,15 @@
             </div>
         </div>
         <!-- Add more tab items for Popular and New added -->
-         <div class="tab-item">
+         <div class="tab-item" id="popular">
             <div class="products-container grid">
                 <div class="product-item">
                     <div class="product-banner">
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-1-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -252,7 +252,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -264,8 +264,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-2-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-2-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -301,7 +301,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -313,8 +313,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-3-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-3-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -350,7 +350,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -362,8 +362,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-4-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-4-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -399,7 +399,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -408,15 +408,15 @@
             </div>
         </div>
 
-        <div class="tab-item">
+        <div class="tab-item"  id="new-added">
             <div class="products-container grid">
                 <div class="product-item">
                     <div class="product-banner">
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-1-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -432,7 +432,7 @@
                             </a> -->
                         </div>
 
-                        <div class="product-badge light-pink">Hot</div>
+                        <div class="product-badge light-pink">New</div>
                     </div>
 
                     <div class="product-content">
@@ -452,7 +452,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -464,8 +464,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-2-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-2-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -481,7 +481,7 @@
                             </a> -->
                         </div>
 
-                        <div class="product-badge light-pink">Hot</div>
+                        <div class="product-badge light-pink">New</div>
                     </div>
 
                     <div class="product-content">
@@ -501,7 +501,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -513,8 +513,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-3-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-3-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -530,7 +530,7 @@
                             </a> -->
                         </div>
 
-                        <div class="product-badge light-pink">Hot</div>
+                        <div class="product-badge light-pink">New</div>
                     </div>
 
                     <div class="product-content">
@@ -550,7 +550,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 
@@ -562,8 +562,8 @@
                         <!-- @for (product of products; track ₹index) { -->
                         <a href="" class="product-images">
                             <!-- <img [src]="'img/'+product.img" alt="" class="product-img"> -->
-                            <img [src]="'img/product-1-1.jpg'" alt="" class="product-img">
-                            <!-- <img [src]="'img/product-1-2.jpg'" alt="" class="product-img"> -->
+                            <img [src]="'img/product-4-1.jpg'" alt="" class="product-img default">
+                            <img [src]="'img/product-4-2.jpg'" alt="" class="product-img hover">
                         </a>
                         <!-- } -->
 
@@ -579,7 +579,7 @@
                             </a> -->
                         </div>
 
-                        <div class="product-badge light-pink">Hot</div>
+                        <div class="product-badge light-pink">New</div>
                     </div>
 
                     <div class="product-content">
@@ -599,7 +599,7 @@
                         </div>
 
 
-                        <a href="#" class="action-btn" aria-label="Add To Cart">
+                        <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
                             <fa-icon class="faicon" [icon]="faShoppingBag" />
                         </a>
 

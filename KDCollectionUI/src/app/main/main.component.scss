@@ -1,5 +1,15 @@
 /* ======================== HOME ==================================== */
 
+.home{
+  background-image: url("../../../public/img/home_img.jpg");
+  background-size: cover;
+  background-repeat: round;
+}
+
+.section-lg{
+  padding-block: 8.88rem;
+}
+
 .home-container {
   grid-template-columns: 5fr 7fr;
   align-items: center;

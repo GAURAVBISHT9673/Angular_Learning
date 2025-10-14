@@ -1,5 +1,5 @@
 <!-- <p>left-side-nav-bar works!</p> -->
-<div class="sidebar close">
+<div class="sidebar">
     <div class="logo-details">
         <!-- Add Logo Here -->
 
@@ -23,6 +23,7 @@
                     <span class="link_name">Category</span>
                 </a>
                 <i class='bx bx-chevron-down arrow'></i>
+                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Category</a></li>
@@ -31,13 +32,14 @@
                 <li><a routerLink="">Card Design</a></li>
             </ul>
         </li>
-        <li>
+        <li [ngClass]="showMenu">
             <div class="icon-link">
                 <a routerLink="">
                     <i class='bx bx-book-alt'></i>
                     <span class="link_name">Posts</span>
                 </a>
-                <i class='bx bx-chevron-down arrow'></i>
+                <!-- <i [ngClass]="'bx' + iconName"  class='bx bx-chevron-down arrow' (click)="toggleIcon()" ></i> -->
+                 <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i>
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Posts</a></li>
@@ -67,10 +69,11 @@
         <li>
             <div class="icon-link">
                 <a routerLink="">
-                    <i class='bx bx-plug'></i>
+                    <i class='bx bx-plug' ></i>
                     <span class="link_name">Plugins</span>
                 </a>
                 <i class='bx bx-chevron-down arrow'></i>
+                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Plugins</a></li>

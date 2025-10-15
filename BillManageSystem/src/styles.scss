@@ -7,3 +7,22 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+//   background: ; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: fff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

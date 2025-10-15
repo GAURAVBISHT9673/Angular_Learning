@@ -6,6 +6,7 @@
         <!-- Add Logo Here -->
         <span class="logo_name">Gaur Enginer Work</span>
     </div>
+
     <ul class="nav-links">
         <li>
             <a routerLink="">
@@ -23,7 +24,7 @@
                     <span class="link_name">Category</span>
                 </a>
                 <i class='bx bx-chevron-down arrow'></i>
-                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
+                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Category</a></li>
@@ -39,7 +40,7 @@
                     <span class="link_name">Posts</span>
                 </a>
                 <!-- <i [ngClass]="'bx' + iconName"  class='bx bx-chevron-down arrow' (click)="toggleIcon()" ></i> -->
-                 <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i>
+                <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()"></i>
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Posts</a></li>
@@ -69,11 +70,11 @@
         <li>
             <div class="icon-link">
                 <a routerLink="">
-                    <i class='bx bx-plug' ></i>
+                    <i class='bx bx-plug'></i>
                     <span class="link_name">Plugins</span>
                 </a>
                 <i class='bx bx-chevron-down arrow'></i>
-                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
+                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Plugins</a></li>
@@ -109,18 +110,17 @@
                 <li><a class="link_name">Setting</a></li>
             </ul>
         </li>
-        <li>
-            <div class="profile-details">
-                <div class="profile-content">
-                    <!-- <img src="" alt="profile"> -->
-                </div>
-                <div class="name-job">
-                    <div class="profile_name">Admin</div>
-                    <div class="job">Web Designer</div>
-                </div>
-                <a routerLink=""> <i class='bx bx-log-out'></i></a>
-            </div>
-        </li>
     </ul>
+
+    <div class="profile-details">
+        <div class="profile-content">
+            <!-- <img src="" alt="profile"> -->
+        </div>
+        <div class="name-job">
+            <div class="profile_name">Admin</div>
+            <div class="job">Web Designer</div>
+        </div>
+        <a routerLink=""> <i class='bx bx-log-out'></i></a>
+    </div>
 
 </div>

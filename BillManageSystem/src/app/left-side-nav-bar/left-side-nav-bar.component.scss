@@ -143,6 +143,7 @@
 }
 
 .sidebar .profile-details{
+    height: 10%;
     position: fixed;
     bottom: 0;
     width: 260px;
@@ -150,7 +151,7 @@
     align-items: center;
     justify-content: space-between;
     background: #1d1b31;
-    padding: 6px 0;
+    padding: 4px 0;
     // transition: all 0.4s ease;
 }
 

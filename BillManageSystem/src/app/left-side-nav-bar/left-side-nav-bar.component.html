@@ -23,8 +23,9 @@
                     <i class='bx bx-collection'></i>
                     <span class="link_name">Category</span>
                 </a>
-                <i class='bx bx-chevron-down arrow'></i>
-                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
+                <!-- <i class='bx bx-chevron-down arrow'></i> -->
+                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon($event)" ></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Category</a></li>
@@ -33,14 +34,15 @@
                 <li><a routerLink="">Card Design</a></li>
             </ul>
         </li>
-        <li [ngClass]="showMenu">
+        <li>
             <div class="icon-link">
                 <a routerLink="">
                     <i class='bx bx-book-alt'></i>
                     <span class="link_name">Posts</span>
                 </a>
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
                 <!-- <i [ngClass]="'bx' + iconName"  class='bx bx-chevron-down arrow' (click)="toggleIcon()" ></i> -->
-                <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()"></i>
+                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon($event)"></i> -->
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Posts</a></li>
@@ -73,8 +75,7 @@
                     <i class='bx bx-plug'></i>
                     <span class="link_name">Plugins</span>
                 </a>
-                <i class='bx bx-chevron-down arrow'></i>
-                <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon()" ></i> -->
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Plugins</a></li>

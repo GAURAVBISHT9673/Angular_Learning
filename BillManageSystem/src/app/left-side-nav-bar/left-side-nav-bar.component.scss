@@ -35,13 +35,18 @@
 .sidebar .nav-links{
     height: 80%;
     // padding-top: 30px;
+    
     overflow: auto;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
 }
 
 .sidebar .nav-links li:hover{
@@ -54,7 +59,6 @@
     justify-content: space-between;
 }
 
-// .sidebar .nav-links li i{
 .sidebar i{
     height: 50px;
     min-width: 78px;
@@ -62,6 +66,11 @@
     line-height: 50px;
     color: #fff;  
     font-size: 15pt;  
+    transition: all 0.4s ease;
+}
+
+.sidebar li.showMenu i.arrow{
+    transform: rotate(-180deg);
 }
 
 .sidebar .nav-links li a{

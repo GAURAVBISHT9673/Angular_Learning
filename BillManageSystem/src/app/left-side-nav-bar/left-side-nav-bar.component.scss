@@ -35,7 +35,6 @@
 .sidebar .nav-links{
     height: 80%;
     // padding-top: 30px;
-    
     overflow: auto;
 }
 
@@ -192,4 +191,42 @@
 
 .sidebar .profile-details .job{
     font-size: 11pt;
+}
+
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    // padding: 0 20px;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+    font-size: 18pt;
+    font-weight: 600;
+    color: #11101d;
+    cursor: pointer;
+}
+
+.home-section .home-content .bx-menu{
+    margin: 0 15px;
+}
+
+.home-section .home-content .text{
+    font-size: 18pt;
+    font-weight: 600;
 }

@@ -22,4 +22,9 @@ export class LeftSideNavBarComponent {
     // this.showMenu = this.showMenu === '' ? 'showMenu' : '';
   }
 
+  bxMenuToggle(): void {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar?.classList.toggle('close');
+  }
+
 }

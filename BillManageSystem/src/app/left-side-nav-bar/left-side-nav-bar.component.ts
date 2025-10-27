@@ -1,11 +1,12 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { BillEntryFormComponent } from '../bill-entry-form/bill-entry-form.component';
 
 
 @Component({
   selector: 'app-left-side-nav-bar',
-  imports: [RouterLink],
+  imports: [BillEntryFormComponent],
   templateUrl: './left-side-nav-bar.component.html',
   styleUrl: './left-side-nav-bar.component.scss'
 })

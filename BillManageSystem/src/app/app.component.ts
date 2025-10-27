@@ -5,12 +5,10 @@ import { LeftSideNavBarComponent } from "./left-side-nav-bar/left-side-nav-bar.c
 
 @Component({
     selector: 'app-root',
-    imports: [LeftSideNavBarComponent, RouterOutlet],
+    imports: [LeftSideNavBarComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
   // title = 'BillManageSystem';
-
-
 }

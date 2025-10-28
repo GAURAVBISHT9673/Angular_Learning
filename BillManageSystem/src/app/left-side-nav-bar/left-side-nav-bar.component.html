@@ -23,7 +23,7 @@
                     <i class='bx bx-collection'></i>
                     <span class="link_name">Category</span>
                 </a>
-                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)"></i>
                 <!-- <i class='bx bx-chevron-down arrow'></i> -->
                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon($event)" ></i> -->
             </div>
@@ -40,7 +40,7 @@
                     <i class='bx bx-book-alt'></i>
                     <span class="link_name">Posts</span>
                 </a>
-                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)"></i>
                 <!-- <i [ngClass]="'bx' + iconName"  class='bx bx-chevron-down arrow' (click)="toggleIcon()" ></i> -->
                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon($event)"></i> -->
             </div>
@@ -75,7 +75,7 @@
                     <i class='bx bx-plug'></i>
                     <span class="link_name">Plugins</span>
                 </a>
-                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)" ></i>
+                <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)"></i>
             </div>
             <ul class="sub-menu">
                 <li><a class="link_name">Plugins</a></li>
@@ -128,11 +128,10 @@
 
 <section class="home-section">
     <div class="home-content">
-        <i class='bx bx-menu' (click)="bxMenuToggle()" ></i>
+        <i class='bx bx-menu' (click)="bxMenuToggle()"></i>
         <span class="text">Gaur Enginer Work</span>
     </div>
-    <div class="container">
-        <!-- <router-outlet /> -->
-         <app-bill-entry-form />
-    </div>
+
+    <!-- <router-outlet /> -->
+    <app-bill-entry-form />
 </section>

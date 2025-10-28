@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    margin: 0 15px;
+    background-color: white;
+}
+
+.container form .title{
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 260px;
+    width: 220px;
     background: #11101d;
     z-index: 100;
     transition: all 0.5s ease;
@@ -82,7 +82,7 @@
 
 .sidebar i{
     height: 50px;
-    min-width: 78px;
+    min-width: 50px;
     text-align: center;
     line-height: 50px;
     color: #fff;  
@@ -190,7 +190,7 @@
     height: 10%;
     position: fixed;
     bottom: 0;
-    width: 260px;
+    width: 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -247,8 +247,8 @@
     position: relative;
     background: #E4E9F7;
     height: 100vh;
-    left: 260px;
-    width: calc(100% - 260px);
+    left: 220px;
+    width: calc(100% - 220px);
     transition: all 0.5s ease;
 }
 

@@ -2,87 +2,92 @@
 <div class="container">
     <form action="">
 
-        <div class="form-first">
-            <div class="details personal">
-                <span class="title">Tax Invoice</span>
-                <div class="fields-container">
-                    <fieldset>
-                        <legend>Details of Receiver</legend>
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Full Name</label>
-                                <input type="text" name="" id="txtName" placeholder="Enter your name">
-                            </div>
-                            <div class="input-field">
-                                <label>Address</label>
-                                <textarea name="" id=""></textarea>
-                            </div>
-                            <div class="input-field">
-                                <label>States</label>
-                                <select name="" id="">
-                                    <option value="">Please Select</option>
-                                    <option value="">09-Uttar Pradesh</option>
-                                    <option value="">07-Delhi</option>
-                                </select>
-                            </div>
-                            <div class="input-field">
-                                <label>GSTIN No.</label>
-                                <input type="text" name="" id="txtGSTNo" placeholder="Enter GSTIN No.">
-                            </div>
+        <!-- <div class="form-first"> -->
+        <div class="details personal">
+            <span class="title">Tax Invoice</span>
+            <!-- <div class="fields-container"> -->
+            <div class="row">
+                <fieldset>
+                    <legend>Details of Receiver</legend>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="txtName" placeholder="Enter your name">
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Details of Consignee / Shipped To </legend>
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Full Name</label>
-                                <input type="text" name="" id="txtName" placeholder="Enter your name">
-                            </div>
-                            <div class="input-field">
-                                <label>Address</label>
-                                <textarea name="" id=""></textarea>
-                            </div>
-                            <div class="input-field">
-                                <label>States</label>
-                                <select name="" id="">
-                                    <option value="">Please Select</option>
-                                    <option value="">09-Uttar Pradesh</option>
-                                    <option value="">07-Delhi</option>
-                                </select>
-                            </div>
-                            <div class="input-field">
-                                <label>GSTIN No.</label>
-                                <input type="text" name="" id="txtGSTNo" placeholder="Enter GSTIN No.">
-                            </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <textarea id="txtAddress"></textarea>
                         </div>
-                    </fieldset>
-                </div>
-
+                        <div class="input-field">
+                            <label>States</label>
+                            <select id="ddlStates">
+                                <option value="">Please Select</option>
+                                <option value="">09-Uttar Pradesh</option>
+                                <option value="">07-Delhi</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>GSTIN No.</label>
+                            <input type="text" id="txtGSTNo" placeholder="Enter GSTIN No.">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Details of Consignee / Shipped To </legend>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="txtShippedName" placeholder="Enter your name">
+                        </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <textarea id="txtShippedAddress"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>States</label>
+                            <select id="ddlShippedStates">
+                                <option value="">Please Select</option>
+                                <option value="">09-Uttar Pradesh</option>
+                                <option value="">07-Delhi</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>GSTIN No.</label>
+                            <input type="text" id="txtShippedGSTNo" placeholder="Enter GSTIN No.">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
                 <div class="fields">
                     <div class="input-field">
-                        <label>Full Name</label>
-                        <input type="text" name="" id="txtName" placeholder="Enter your name">
+                        <label>E-way No.</label>
+                        <input type="text" id="txtEwayNo" placeholder="Enter E-way No.">
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="fields2">
                     <div class="input-field">
                         <label>Date</label>
-                        <input type="date" name="" id="">
+                        <input type="date" id="txtDate">
                     </div>
                     <div class="input-field">
                         <label>Vehicle No</label>
-                        <input type="text" name="" id="" placeholder="Enter Vehicle No.">
+                        <input type="text" id="txtVehicleNo" placeholder="Enter Vehicle No.">
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="fields">
                     <div class="input-field">
-                        <label>Full Name</label>
-                        <input type="text" name="" id="txtName" placeholder="Enter your name">
+                        <label>Name Of Transport</label>
+                        <input type="text" id="txtNameOfTransport" placeholder="Enter Name Of Transport">
                     </div>
                 </div>
-
             </div>
         </div>
+        <!-- </div> -->
 
 
 

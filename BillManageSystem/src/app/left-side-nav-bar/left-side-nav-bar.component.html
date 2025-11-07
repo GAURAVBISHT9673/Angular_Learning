@@ -11,25 +11,25 @@
         <li>
             <a routerLink="">
                 <i class='bx bx-grid-alt'></i>
-                <span class="link_name">DashBoard</span>
+                <span class="link_name" routerLink="">DashBoard</span>
             </a>
             <ul class="sub-menu blank">
-                <li><a class="link_name">DashBoard</a></li>
+                <li><a class="link_name" routerLink="">DashBoard</a></li>
             </ul>
         </li>
         <li>
             <div class="icon-link">
                 <a routerLink="">
                     <i class='bx bx-collection'></i>
-                    <span class="link_name">Category</span>
+                    <span class="link_name">Bills</span>
                 </a>
                 <i class='bx bx-chevron-down arrow' (click)="toggleIcon($event)"></i>
                 <!-- <i class='bx bx-chevron-down arrow'></i> -->
                 <!-- <i [ngClass]="'bx ' + iconName" (click)="toggleIcon($event)" ></i> -->
             </div>
             <ul class="sub-menu">
-                <li><a class="link_name">Category</a></li>
-                <li><a routerLink="">Wed Design</a></li>
+                <li><a class="link_name">Bills</a></li>
+                <li><a routerLink="" routerLink="tax">Tax Invoice</a></li>
                 <li><a routerLink="">Login Form</a></li>
                 <li><a routerLink="">Card Design</a></li>
             </ul>
@@ -132,6 +132,6 @@
         <span class="text">Gaur Enginer Work</span>
     </div>
 
-    <!-- <router-outlet /> -->
-    <app-bill-entry-form />
+    <router-outlet />
+    <!-- <app-bill-entry-form /> -->
 </section>

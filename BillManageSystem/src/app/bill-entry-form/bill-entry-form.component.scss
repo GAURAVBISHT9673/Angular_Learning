@@ -4,6 +4,10 @@
     // background-color: white;
 }
 
+.details{
+    padding: 0 8px;
+}
+
 .container form .title{
     font-size: 13pt;
     font-weight: 500;
@@ -14,12 +18,12 @@
     justify-content: space-between;
     // width: calc(100% / 2);
 }
-
+// 
 .row{
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 0 8px;
+    // padding: 0 8px;
 }
 
 fieldset{

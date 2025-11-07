@@ -4,7 +4,10 @@
 
         <!-- <div class="form-first"> -->
         <div class="details personal">
-            <span class="title">Tax Invoice</span>
+            <div class="row2">
+                <div class="tab"><span class="title">Bill</span></div>
+                <div class="tab"><span class="title">Details</span></div>
+            </div>
             <!-- <div class="fields-container"> -->
             <div class="row">
                 <fieldset>
@@ -22,8 +25,9 @@
                             <label>States</label>
                             <select id="ddlStates">
                                 <option value="">Please Select</option>
-                                <option value="">09-Uttar Pradesh</option>
-                                <option value="">07-Delhi</option>
+                                @for (state of states; track $index) {
+                                <option [value]="state.tin">{{ state.tin +'-'+ state.name }}</option>
+                                }
                             </select>
                         </div>
                         <div class="input-field">
@@ -47,8 +51,9 @@
                             <label>States</label>
                             <select id="ddlShippedStates">
                                 <option value="">Please Select</option>
-                                <option value="">09-Uttar Pradesh</option>
-                                <option value="">07-Delhi</option>
+                                @for (state of states; track $index) {
+                                <option [value]="state.tin">{{ state.tin +'-'+ state.name }}</option>
+                                }
                             </select>
                         </div>
                         <div class="input-field">

@@ -1,0 +1,43 @@
+export interface IndianState {
+  name: string;
+  tin: string;
+}
+
+export const IndianStates: IndianState[] = [
+  { name: 'Andaman and Nicobar Islands', tin: '35' },
+  { name: 'Andhra Pradesh', tin: '28' },
+  { name: 'Arunachal Pradesh', tin: '12' },
+  { name: 'Assam', tin: '18' },
+  { name: 'Bihar', tin: '10' },
+  { name: 'Chandigarh', tin: '04' },
+  { name: 'Chhattisgarh', tin: '22' },
+  { name: 'Dadra and Nagar Haveli', tin: '26' },
+  { name: 'Daman and Diu', tin: '25' },
+  { name: 'Delhi', tin: '07' },
+  { name: 'Goa', tin: '30' },
+  { name: 'Gujarat', tin: '24' },
+  { name: 'Haryana', tin: '06' },
+  { name: 'Himachal Pradesh', tin: '02' },
+  { name: 'Jammu and Kashmir', tin: '01' },
+  { name: 'Jharkhand', tin: '20' },
+  { name: 'Karnataka', tin: '29' },
+  { name: 'Kerala', tin: '32' },
+  { name: 'Lakshadweep', tin: '31' },
+  { name: 'Ladakh', tin: '38' },
+  { name: 'Madhya Pradesh', tin: '23' },
+  { name: 'Maharashtra', tin: '27' },
+  { name: 'Manipur', tin: '14' },
+  { name: 'Meghalaya', tin: '17' },
+  { name: 'Mizoram', tin: '15' },
+  { name: 'Nagaland', tin: '13' },
+  { name: 'Odisha', tin: '21' },
+  { name: 'Punjab', tin: '03' },
+  { name: 'Rajasthan', tin: '08' },
+  { name: 'Sikkim', tin: '11' },
+  { name: 'Tamil Nadu', tin: '33' },
+  { name: 'Telangana', tin: '36' },
+  { name: 'Tripura', tin: '16' },
+  { name: 'Uttar Pradesh', tin: '09' },
+  { name: 'Uttarakhand', tin: '05' },
+  { name: 'West Bengal', tin: '19' },
+];
